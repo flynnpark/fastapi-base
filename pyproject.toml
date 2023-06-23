@@ -11,6 +11,7 @@ version = "0.1.0"
 fastapi = {extras = ["all"], version = "^0.95.2"}
 python = "3.11"
 dependency-injector = "^4.41.0"
+ruff = "^0.0.275"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
