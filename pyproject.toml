@@ -3,12 +3,12 @@ authors = ["Flynn <wphestiraid@gmail.com>"]
 description = "FastAPI base project."
 license = "MIT"
 name = "fast-api-base"
-packages = [{include = "app"}]
+packages = [{ include = "app" }]
 readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-fastapi = {extras = ["all"], version = "^0.109.0"}
+fastapi = { extras = ["all"], version = "^0.109.0" }
 inject = "^5.2.0"
 python = "~3.11"
 sqlmodel = "^0.0.14"
@@ -35,20 +35,20 @@ target-version = ['py311']
 
 [tool.ruff]
 ignore = [
-  "E501", # line too long, handled by black
-  "E711", # Comparison to None should be cond is None
-  "E712", # Comparison to True should be cond is True or if cond:
-  "B008", # do not perform function calls in argument defaults
-  "C901", # too complex
+  "E501",    # line too long, handled by black
+  "E711",    # Comparison to None should be cond is None
+  "E712",    # Comparison to True should be cond is True or if cond:
+  "B008",    # do not perform function calls in argument defaults
+  "C901",    # too complex
   "PLR0913", # too many arguments to function call
 ]
 select = [
-  "E", # pycodestyle errors
-  "W", # pycodestyle warnings
-  "F", # pyflakes
-  "I", # isort
-  "C", # flake8-comprehensions
-  "B", # flake8-bugbear
+  "E",  # pycodestyle errors
+  "W",  # pycodestyle warnings
+  "F",  # pyflakes
+  "I",  # isort
+  "C",  # flake8-comprehensions
+  "B",  # flake8-bugbear
   "UP", # pyupgrade
   "PL", # pylint
 ]
