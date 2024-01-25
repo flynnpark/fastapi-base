@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.11']
+        python-version: ["3.11"]
 
     steps:
       - uses: actions/checkout@v4
@@ -20,12 +20,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - uses: psf/black@stable
         with:
-          options: '--check'
-          src: '.'
+          options: "--check"
+          src: "."
           version: 23.12.1
       - uses: chartboost/ruff-action@v1
         with:
-          src: './**/*.py'
           version: 0.1.14
       - uses: jakebailey/pyright-action@v2
         with:
