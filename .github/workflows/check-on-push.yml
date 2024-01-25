@@ -23,6 +23,8 @@ jobs:
           cache: "poetry"
       - name: Install dependencies
         run: poetry install
+      - name: Set path
+        run: echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
       - uses: psf/black@stable
         with:
           options: "--check"
