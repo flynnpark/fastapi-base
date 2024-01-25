@@ -8,19 +8,20 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-dependency-injector = "^4.41.0"
-fastapi = {extras = ["all"], version = "^0.100.0"}
-python = "^3.11"
-sqlalchemy = "^2.0.16"
+fastapi = {extras = ["all"], version = "^0.109.0"}
+inject = "^5.2.0"
+python = "~3.11"
+sqlmodel = "^0.0.14"
 
 [tool.poetry.group.dev.dependencies]
-black = "~23.7.0"
-pre-commit = "^3.3.3"
-pyright = "^1.1.318"
-pytest = "^7.4.0"
-pytest-asyncio = "^0.21.1"
+black = "~23.12.1"
+pre-commit = "^3.6.0"
+pyright = "^1.1.348"
+pytest = "^7.4.4"
+pytest-asyncio = "^0.23.3"
 pytest-cov = "^4.1.0"
-ruff = "^0.0.280"
+pytest-xdist = "^3.5.0"
+ruff = "~0.1.14"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
